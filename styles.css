@@ -1,54 +1,69 @@
-/* Base styles */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #fff5f8;
-  color: #333;
   margin: 0;
-  padding: 0;
+  color: #333;
 }
 
-/* Header styling */
 header {
-  background-color: #ffccdc;
+  background-color: #ffd6e0;
   padding: 2rem;
   text-align: center;
   border-bottom: 4px solid #ff99b3;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2.5rem;
   color: #660033;
+  margin-bottom: 0.5rem;
 }
 
 nav a {
   margin: 0 1rem;
-  text-decoration: none;
   color: #660033;
+  text-decoration: none;
   font-weight: bold;
 }
 
-/* Section styling */
-section {
+main {
   padding: 2rem;
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
 }
 
-section h2 {
+h2 {
   color: #cc3366;
 }
 
-/* Links */
-a {
-  color: #cc3366;
+.card-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-/* Footer */
+.card {
+  background: #ffeaf1;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
 footer {
-  background-color: #ffccdc;
+  background-color: #ffd6e0;
   text-align: center;
   padding: 1rem;
   color: #660033;
   border-top: 2px solid #ff99b3;
 }
+
